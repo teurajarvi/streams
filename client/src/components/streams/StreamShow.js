@@ -1,6 +1,6 @@
 import React from "react";
 
-const ShowDelete = () => {
+const StreamShow = () => {
   return <div>StreamShow</div>;
 };
 
