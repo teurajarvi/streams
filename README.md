@@ -33,4 +33,4 @@ from browser: localhost:3000
 
 > cd client
 
-> npm install --save redux react-redux axios redux-thunk lodash
+> npm install --save react-router-dom redux react-redux axios redux-thunk lodash
