@@ -23,6 +23,10 @@ Control + C
 
 from browser: localhost:3000
 
+# Browser extension used
+
+https://github.com/zalmoxisus/redux-devtools-extension
+
 # How the React-Redux project was initially created
 
 > mkdir streams
