@@ -37,4 +37,4 @@ https://github.com/zalmoxisus/redux-devtools-extension
 
 > cd client
 
-> npm install --save react-router-dom redux react-redux axios redux-thunk lodash
+> npm install --save react-router-dom redux react-redux redux-form axios redux-thunk lodash
