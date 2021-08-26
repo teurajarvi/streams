@@ -27,6 +27,10 @@ from browser: localhost:3000
 
 https://github.com/zalmoxisus/redux-devtools-extension
 
+# JSON Server used
+
+https://www.npmjs.com/package/json-server
+
 # How the React-Redux project was initially created
 
 > mkdir streams
@@ -38,3 +42,13 @@ https://github.com/zalmoxisus/redux-devtools-extension
 > cd client
 
 > npm install --save react-router-dom redux react-redux redux-form axios redux-thunk lodash
+
+> cd ..
+
+> mkdir api
+
+> cd api
+
+> npm init
+
+> npm install --save json-server
