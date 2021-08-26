@@ -25,10 +25,10 @@ class StreamCreate extends React.Component {
     );
   };
 
-  onSubmit(formValues) {
+  onSubmit = (formValues) => {
     //handleSubmit will preventDefault of event
     this.props.createStream(formValues);
-  }
+  };
 
   render() {
     return (
