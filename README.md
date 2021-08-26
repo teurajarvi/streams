@@ -8,7 +8,13 @@ Twitch like React/Redux application
 
 # Install and run the project
 
-> cd streams
+> cd streams/api
+
+> npm install
+
+> npm start
+
+> cd streams/client
 
 > npm install
 
