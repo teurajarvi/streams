@@ -1,4 +1,5 @@
 import streams from "../apis/streams";
+import history from "../history";
 import {
   SIGN_IN,
   SIGN_OUT,
@@ -30,6 +31,7 @@ export const createStream = (formValues) => async (dispacth, getState) => {
 
   dispacth({ type: CREATE_STREAM, payload: response.data });
   // Programmatic navigation to get the user back to the StreamList
+  history.push("/");
 };
 
 // GET
