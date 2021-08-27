@@ -1,3 +1,4 @@
+import _ from "lodash";
 import {
   FETCH_STREAM,
   FETCH_STREAMS,
@@ -6,7 +7,7 @@ import {
   DELETE_STREAM,
 } from "../actions/types";
 
-export default (state = {}, action) => {
+const streamReducers = (state = {}, action) => {
   // check the action.payload content from the action creators dispatch
   switch (action.type) {
     case FETCH_STREAMS:
@@ -23,3 +24,5 @@ export default (state = {}, action) => {
       return state;
   }
 };
+
+export default streamReducers;
