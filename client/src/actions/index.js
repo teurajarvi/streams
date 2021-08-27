@@ -24,10 +24,11 @@ export const signOut = () => {
 
 // Action creators
 // POST
-export const createStream = (formValues) => async (dispacth) => {
-  const response = await streams.post("/streams", formValues);
+export const createStream = (formValues) => async (dispacth, getState) => {
+  const { userId } = getState().auth;
+  const response = await streams.post("/streams", { ...formValues, userId });
 
-  dispacth({ type: CREATE_STREAM, payload: response.date });
+  dispacth({ type: CREATE_STREAM, payload: response.data });
 };
 
 // GET
