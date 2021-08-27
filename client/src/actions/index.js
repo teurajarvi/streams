@@ -29,6 +29,7 @@ export const createStream = (formValues) => async (dispacth, getState) => {
   const response = await streams.post("/streams", { ...formValues, userId });
 
   dispacth({ type: CREATE_STREAM, payload: response.data });
+  // Programmatic navigation to get the user back to the StreamList
 };
 
 // GET
