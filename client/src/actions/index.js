@@ -50,9 +50,10 @@ export const fetchStream = (id) => async (dispacth) => {
 
 // PUT
 export const editStream = (id, formValues) => async (dispacth) => {
-  const response = await streams.put(`/streams/${id}`, formValues);
+  const response = await streams.patch(`/streams/${id}`, formValues);
 
   dispacth({ type: EDIT_STREAM, payload: response.data });
+  history.push("/");
 };
 
 // DELETE
