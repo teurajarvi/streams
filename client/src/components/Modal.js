@@ -1,16 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import history from "../history";
 
 const Modal = (props) => {
   return ReactDOM.createPortal(
-    /* 1st div: Hide the modal if window or modal is clicked and 
-       forward to the homepage.
-       2nd div: Prevent hiding the modal if the modal itself is clicked 
+    /** 1st div: Hide the modal (onDismiss == history.push("/"))
+        if window or modal is clicked and 
+        forward to the homepage.
+        2nd div: Prevent hiding the modal if the modal itself is clicked 
     */
-    <div
-      onClick={() => history.push("/")}
-      className='ui dimmer modals visible active'>
+    <div onClick={props.onDismiss} className='ui dimmer modals visible active'>
       <div
         onClick={(e) => e.stopPropagation()}
         className='ui standard modal visible active'>
