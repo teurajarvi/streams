@@ -1,7 +1,7 @@
 import React from "react";
 // used Plain router instead of BrowserRouter
 //import { BrowserRouter, Route } from "react-router-dom";
-import { Router, Route } from "react-router-dom";
+import { Router, Route, Switch } from "react-router-dom";
 import StreamList from "./streams/StreamList";
 import StreamCreate from "./streams/StreamCreate";
 import StreamEdit from "./streams/StreamEdit";
@@ -17,11 +17,17 @@ const App = () => {
       <Router history={history}>
         <div>
           <Header />
-          <Route path='/' exact component={StreamList} />
-          <Route path='/streams/new' exact component={StreamCreate} />
-          <Route path='/streams/edit/:id' exact component={StreamEdit} />
-          <Route path='/streams/delete/:id' exact component={StreamDelete} />
-          <Route path='/streams/:id' exact component={StreamShow} />
+          {/** Switch will show only the first route that found
+           * f.e. if found /streams/new it will be shown but
+           * if that is not found it tries /stream/:id
+           */}
+          <Switch>
+            <Route path='/' exact component={StreamList} />
+            <Route path='/streams/new' exact component={StreamCreate} />
+            <Route path='/streams/edit/:id' exact component={StreamEdit} />
+            <Route path='/streams/delete/:id' exact component={StreamDelete} />
+            <Route path='/streams/:id' exact component={StreamShow} />
+          </Switch>
         </div>
       </Router>
       {/*</BrowserRouter>*/}
