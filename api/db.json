@@ -11,64 +11,16 @@
       "id": 2
     },
     {
-      "description": "Ville Jankerin ohjaama elokuva",
-      "title": "Pussikaljaelokuva",
-      "id": 3
-    },
-    {
-      "description": "Ville Jankerin ohjaama elokuva",
-      "title": "Pussikaljaelokuva",
-      "id": 4
-    },
-    {
-      "description": "Ville Jankerin ohjaama elokuva",
-      "title": "Pussikaljaelokuva",
-      "id": 5
-    },
-    {
-      "title": "testi",
-      "description": "toimiiko",
-      "id": 6
-    },
-    {
-      "title": "hello",
-      "description": "world",
-      "id": 7
-    },
-    {
-      "title": "Otsikko",
-      "description": "Selitys",
-      "id": 8
-    },
-    {
-      "title": "Video with userID",
-      "description": "Yeah, including userID",
-      "userId": "101376991982804026036",
-      "id": 9
-    },
-    {
       "title": "Stream with userID",
       "description": "This is the 1st stream with userID",
       "userId": "101376991982804026036",
       "id": 10
     },
     {
-      "title": "Uusi",
-      "description": "Katsotaan toimiiko ohjelmoitu navigointi",
-      "userId": "101376991982804026036",
-      "id": 11
-    },
-    {
       "title": "Testi",
       "description": "Siirtyykö navigoisti createStream sivulta fetchStreams sivulle",
       "userId": "101376991982804026036",
       "id": 12
-    },
-    {
-      "title": "Re-factored StreamCreate and StreamEdit",
-      "description": "Testing a refactored component",
-      "userId": "101376991982804026036",
-      "id": 13
     }
   ]
 }
