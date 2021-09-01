@@ -79,7 +79,7 @@ https://www.npmjs.com/package/flv.js
 
 > cd client
 
-> npm install --save react-router-dom redux react-redux redux-form axios redux-thunk lodash flv.js
+> npm install --save react-router-dom redux react-redux redux-form axios redux-thunk lodash flv.js final-form react-final-form
 
 # Create the API for JSON Server to mimic DB
 
