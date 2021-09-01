@@ -51,12 +51,17 @@ https://obsproject.com
 
 > Create Scene: Name it as you wish
 
-> Sources:
+> Set up Sources:
 
 - Display Capture
 - Audio Input Capture
 
-> Test by recording a video
+> Settings -> Stream -> Custom Streaming Server:
+
+- URL: rtmp://localhost/live
+- Stream key: stream as the number the stream get as created first. localhost:3000/streams/1 the stream number is 1.
+
+> Test by starting the Streamy app (client), JSON server (api), RTMP server (rtmpserver) and click Start Streaming button in Controls of OBS.
 
 # flv.js used as Video Player
 
