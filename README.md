@@ -1,6 +1,6 @@
 # streams
 
-Twitch like React/Redux application
+Twitch like React/Redux application (User browser, port 3000) using JSON Server (DB mimic, port 3001), RTMP Server (streams, port 8000, browser request to get the video feed), Open Broadcaster Software (OBS, streamers computer for incoming streams, port 1935).
 
 # Clone the project using Git
 
@@ -41,19 +41,40 @@ https://www.npmjs.com/package/json-server
 
 https://github.com/illuspas/Node-Media-Server
 
+# OBS
+
+https://obsproject.com
+
+> Download and install to your OS: [Windows, Linux, MacOS]
+
+> Open the OBS app
+
+> Create Scene: Name it as you wish
+
+> Sources:
+
+- Display Capture
+- Audio Input Capture
+
+> Test by recording a video
+
+# flv.js used as Video Player
+
+https://www.npmjs.com/package/flv.js
+
 # How the React-Redux project was initially created
 
 > mkdir streams
 
 > cd streams
 
-> npx create-react-app client
-
 # Create the client for the app UI
+
+> npx create-react-app client
 
 > cd client
 
-> npm install --save react-router-dom redux react-redux redux-form axios redux-thunk lodash
+> npm install --save react-router-dom redux react-redux redux-form axios redux-thunk lodash flv.js
 
 # Create the API for JSON Server to mimic DB
 
